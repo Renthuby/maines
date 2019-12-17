@@ -5,26 +5,33 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-       >
+        android:orientation="vertical">
 
     <EditText android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:hint="Input Name"
-              android:id="@+id/inputname"
-              />
+              android:layout_height="100dp"
+              android:inputType="textMultiLine"
+              android:hint="Input Text"
+              android:id="@+id/textbox"
+    />
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Играть!"
-            android:onClick="InGame"
+            android:text="Save"
+            android:onClick="OnClickSave"
             android:id="@+id/button"/>
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="GoFile"
-            android:onClick="InFile"
+            android:text="Open"
+            android:onClick="OnClickOpen"
             android:id="@+id/buttonfile"
-            />
+    />
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:id="@+id/textOpen"
+    />
+
 
 </LinearLayout>
